@@ -235,7 +235,6 @@ def process_object(obj, mat_map):
 
         tex = c4d.TextureTag()
         tex.SetMaterial(mat)
-        tex[c4d.TEXTURETAG_RESTRICTION] = sel_name
         obj.InsertTag(tex)
 
     c4d.EventAdd()
@@ -302,4 +301,5 @@ def main():
     print("\n=== DONE ===\n")
 
 if __name__ == "__main__":
+
     main()
